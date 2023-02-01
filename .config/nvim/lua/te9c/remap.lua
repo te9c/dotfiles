@@ -18,4 +18,4 @@ vim.keymap.set("n","<space>",":")
 vim.keymap.set("i","jj","<esc>")
 vim.keymap.set("n","x","\"_x")
 
-vim.keymap.set("n","<leader>d", vim.cmd.Ex)
+-- vim.keymap.set("n","<leader>d", vim.cmd.Ex)
