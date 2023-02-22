@@ -26,7 +26,6 @@ vim.opt.list = true
 vim.opt.listchars = "trail:·"
 vim.opt.showmode = false
 vim.opt.signcolumn = "yes"
--- vim.opt.autochdir = true
 
 vim.o.background = "dark"
--- vim.cmd([[colorscheme gruvbox]])
+vim.opt.clipboard="unnamedplus"
