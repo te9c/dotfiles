@@ -7,7 +7,7 @@ require("toggleterm").setup{
 function Compilecpp ()
     local file = vim.api.nvim_eval("expand('%:p')")
     local outputFile = vim.api.nvim_eval("expand('%:r')")
-    local cmdStr = "'g++ -std=c++11 " .. file ..  " -o " .. outputFile .. " && " .. outputFile .. "'"
+    local cmdStr = "'g++ -std=c++11 -g " .. file ..  " -o " .. outputFile .. " && " .. outputFile .. "'"
 
     -- local termExec = "TermExec cmd=" .. cmdStr .. "'"
     local termExec = string.format("TermExec cmd=%s",cmdStr)
@@ -16,4 +16,9 @@ function Compilecpp ()
     vim.cmd(termExec)
 end
 
-vim.cmd("autocmd filetype cpp nnoremap <leader>cb :w <bar> lua Compilecpp()<cr>")
+vim.api.nvim_create_autocmd("FileType",{
+    pattern = "cpp",
+    callback = function (args)
+        vim.keymap.set("n","<leader>cb",function () Compilecpp() end,{buffer = args.buf})
+    end
+})
