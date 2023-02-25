@@ -5,8 +5,8 @@ require("toggleterm").setup{
 }
 
 function Compilecpp ()
-    local file = vim.api.nvim_eval("expand('%:p')")
-    local outputFile = vim.api.nvim_eval("expand('%:r')")
+    local file = vim.fn.expand('%:p')
+    local outputFile = vim.fn.expand('%:p:r')
     local cmdStr = "'g++ -std=c++11 -g " .. file ..  " -o " .. outputFile .. " && " .. outputFile .. "'"
 
     -- local termExec = "TermExec cmd=" .. cmdStr .. "'"
