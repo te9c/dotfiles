@@ -22,7 +22,7 @@ end
 
 local compilatorCommand = "g++"
 local compilationArgs = {
-    "-g",
+    "-gdwarf-4",
     "-Wall",
     "-Wextra",
     "-std=c++2a",

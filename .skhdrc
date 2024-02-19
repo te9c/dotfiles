@@ -112,6 +112,8 @@ alt + shift - 0 : yabai -m window --space 10
 alt - n : yabai -m space --focus prev
 alt - m : yabai -m space --focus next
 
+alt - f : yabai -m window --toggle zoom-fullscreen
+
 alt - e : yabai -m display --focus recent
 
 # moving windows
@@ -125,7 +127,7 @@ alt - return : kitty --single-instance ~
 alt - q : yabai -m window --close
 
 # send current space to display 2
-alt - o : yabai -m space --display recent
+alt - o : yabai -m window --display recent
 
 # swap managed window
 # shift + alt - h : yabai -m window --swap north

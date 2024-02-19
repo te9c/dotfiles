@@ -125,3 +125,4 @@ export PAGER=less
 # }
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
