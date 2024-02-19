@@ -1,0 +1,25 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 976,
+       "width": 1876,
+       "x": 1942,
+       "y": 60
+    },
+    "marks": [],
+    "name": "Spotify",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^Spotify$",
+        "instance": "^spotify$",
+       // "machine": "^arch\\-te9c$",
+       // "title": "^Spotify$"
+       }
+    ],
+    "type": "con"
+}
+
