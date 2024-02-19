@@ -1,0 +1,50 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1014,
+       "width": 940,
+       "x": 2887,
+       "y": 22
+    },
+    "marks": [],
+    "name": "Друзья - Discord",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^discord$",
+        "instance": "^discord$",
+       // "machine": "^arch\\-te9c$",
+       // "title": "^Друзья\\ \\-\\ Discord$",
+       // "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1014,
+       "width": 931,
+       "x": 2887,
+       "y": 22
+    },
+    "marks": [],
+    "name": "Telegram (16593)",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^TelegramDesktop$",
+        "instance": "^telegram\\-desktop$",
+       // "machine": "^arch\\-te9c$",
+       // "title": "^Telegram\\ \\(16593\\)$"
+       }
+    ],
+    "type": "con"
+}
+

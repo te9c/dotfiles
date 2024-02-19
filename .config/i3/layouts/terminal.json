@@ -1,0 +1,25 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1014,
+       "width": 1876,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "te9c@arch-te9c:~",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^kitty$",
+        "instance": "^kitty$",
+       // "machine": "^arch\\-te9c$",
+       // "title": "^te9c\\@arch\\-te9c\\:\\~$"
+       }
+    ],
+    "type": "con"
+}
+
