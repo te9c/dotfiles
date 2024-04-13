@@ -108,6 +108,8 @@ alias ranger='ranger --choosedir=/tmp/.rangerdir; LASTDIR=`cat /tmp/.rangerdir`;
 alias g++='g++-13'
 alias gcc='gcc-13'
 
+alias timus='clipcopy $HOME/Work/secrets/timus.txt'
+
 export PATH="$HOME/.local/bin:$PATH"
 export PAGER=less
 
@@ -126,3 +128,6 @@ export PAGER=less
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
+
+alias anvim="NVIM_APPNAME=astronvim_v4 nvim"

@@ -1,7 +1,8 @@
 return {
     updater = require("user.updater"),
 
-    colorscheme = "moonfly",
+    -- colorscheme = "moonfly",
+    colorscheme = "catppuccin-mocha",
     -- colorscheme = "desert",
     -- colorscheme = "catppuccin",
     -- colorscheme = "astrodark",
@@ -36,7 +37,7 @@ return {
         })
 
         -- Try Hard features:
-        vim.g.diagnostics_mode = 0
-        vim.g.cmp_enabled = false
+        -- vim.g.diagnostics_mode = 0
+        -- vim.g.cmp_enabled = false
     end,
 }

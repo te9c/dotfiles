@@ -56,6 +56,13 @@ local CompileAndRunCpp = function()
     vim.cmd('TermExec cmd="' .. cmd .. '" direction="' .. direction .. '"')
 end
 
+local RunPython = function()
+    local cmd = "python3 "
+    local path = vim.api.nvim_buf_get_name(0)
+    cmd = cmd .. path
+    vim.cmd('TermExec cmd="' .. cmd .. '" direction="' .. direction .. '"')
+end
+
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     pattern = { "*.cpp" },
     desc = "Compile and run cpp file",
@@ -70,4 +77,12 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     callback = function()
         vim.keymap.set("n", "<leader>tc", Compile, { desc = "ToggleTerm compile" })
     end,
+})
+
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+    pattern = { "*.py" },
+    desc = "Run python",
+    callback = function()
+        vim.keymap.set("n", "<leader>tr", RunPython, { desc = "ToggleTerm compile and run" })
+    end
 })
