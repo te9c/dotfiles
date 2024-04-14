@@ -2,4 +2,11 @@ This is all of my dotfiles.
 Everything in one repository.
 
 # How to setup?
-Just install GNU stow, clone this repository in $HOME/dotfiles, cd to it and `stow .`. That's it.
+
+1. Install `GNU stow` on your system.
+2. Run `install.sh`
+
+# Configuration
+
+The `install.sh` script automatically install required config based on your system.
+But if you want you can set `auto_options` variable to `false` and select manually which configs to install.
