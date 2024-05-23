@@ -101,6 +101,34 @@ return {
     -- A custom `on_attach` function to be run after the default `on_attach` function
     -- takes two parameters `client` and `bufnr`  (`:h lspconfig-setup`)
     on_attach = function(client, bufnr)
+      if client.name == "omnisharp" then
+        -- vim.keymap.set("n", "gd", function() require("omnisharp_extended").lsp_definition() end, { buffer = bufnr })
+        vim.keymap.set(
+          "n",
+          "gd",
+          function() require("omnisharp_extended").telescope_lsp_definition() end,
+          { buffer = bufnr, desc = "Show the definition of current symbol" }
+        )
+        vim.keymap.set(
+          "n",
+          "gr",
+          function() require("omnisharp_extended").telescope_lsp_references() end,
+          { buffer = bufnr, desc = "References of current symbol" }
+        )
+        vim.keymap.set(
+          "n",
+          "gy",
+          function() require("omnisharp_extended").telescope_lsp_type_definition() end,
+          { buffer = bufnr, desc = "Definition of current type" }
+        )
+        vim.keymap.set(
+          "n",
+          "gI",
+          function() require("omnisharp_extended").telescope_lsp_implementation() end,
+          { buffer = bufnr, desc = "Implementation of current symbol" }
+        )
+      end
+
       -- this would disable semanticTokensProvider for all clients
       -- client.server_capabilities.semanticTokensProvider = nil
     end,

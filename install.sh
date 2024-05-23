@@ -23,7 +23,7 @@ auto_options=true
 
 
 if [[ "$auto_options" == true ]]; then
-    osname=$(uname)
+    osname=$(uname -s)
 
     if [[ $osname == "Darwin" ]]; then
         INSTALL_YABAIRC=true

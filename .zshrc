@@ -73,6 +73,8 @@ ZSH_THEME="robbyrussell"
 # plugins=(zsh-syntax-highlighting zsh-autocomplete)
 plugins=(fast-syntax-highlighting zsh-autocomplete)
 
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -112,6 +114,7 @@ alias timus='clipcopy $HOME/Work/secrets/timus.txt'
 
 export PATH="$HOME/.local/bin:$PATH"
 export PAGER=less
+export MANPAGER='nvim +Man!'
 
 
 # () {
@@ -131,3 +134,10 @@ export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
 
 alias anvim="NVIM_APPNAME=astronvim_v4 nvim"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-features=PlatformHEVCEncoderSupport"
+
+# fzf zsh integration
+eval "$(fzf --zsh)"
+
+# FIX Alt-c in fzf
+bindkey "ç" fzf-cd-widget

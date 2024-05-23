@@ -1,5 +1,23 @@
-let mapleader = "space"
+" For more see https://www.jetbrains.com/help/idea/using-product-as-the-vim-editor.html#vimrc
+
+let mapleader = " "
+
+set clipboard=unnamedplus
 
 inoremap jj <esc>
+inoremap jk <esc>
 nnoremap o o<esc>
 nnoremap O O<esc>
+nnoremap L :tabnext<CR>
+nnoremap H :tabprev<CR>
+nnoremap <leader>c :close<CR>
+
+nmap gI <Action>(ReSharperGotoImplementation)
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fw <Action>(FindInPath)
+nmap <leader>la <Action>(ShowIntentionActions)
+nmap <leader>ld <Action>(ShowErrorDescription)
+nmap <leader>lr <Action>(RenameElement)
+nmap gcc <Action>(CommentByLineComment)
+vmap gc <Action>(CommentByLineComment)
+nmap <leader>lf <Action>(ReformatCode)
