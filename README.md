@@ -6,6 +6,10 @@ Everything in one repository.
 1. Install `GNU stow` on your system.
 2. Run `install.sh`
 
+> [!IMPORTANT]
+> Don't forget to pass `--recurse-submodules` to git clone command
+> to download configs that located in other repositories (like [neovim](https://github.com/te9c/AstroNvim-config)).
+
 # Configuration
 
 The `install.sh` script automatically install required config based on your system.
