@@ -33,7 +33,7 @@ return {
         autoindent = true,
         compatible = false,
         list = true,
-        listchars = "trail:·",
+        listchars = "tab:→ ,trail:·",
         tabstop = 4,
         shiftwidth = 4,
         -- mouse = "",

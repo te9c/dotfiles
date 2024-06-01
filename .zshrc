@@ -107,8 +107,8 @@ alias kssh="kitty +kitten ssh"
 export EDITOR="nvim"
 alias ranger='ranger --choosedir=/tmp/.rangerdir; LASTDIR=`cat /tmp/.rangerdir`; cd "$LASTDIR"'
 
-alias g++='g++-13'
-alias gcc='gcc-13'
+alias g++='g++-14'
+alias gcc='gcc-14'
 
 alias timus='clipcopy $HOME/Work/secrets/timus.txt'
 
