@@ -116,7 +116,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export PAGER=less
 export MANPAGER='nvim +Man!'
 
-
 # () {
 #    local -a prefix=( '\e'{\[,O} )
 #    local -a up=( ${^prefix}A ) down=( ${^prefix}B )
@@ -133,7 +132,8 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
 
-alias anvim="NVIM_APPNAME=astronvim_v4 nvim"
+alias anvim="NVIM_APPNAME=anvim /opt/homebrew/bin/nvim"
+alias nvim="nvim-nightly"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-features=PlatformHEVCEncoderSupport"
 
 # fzf zsh integration
