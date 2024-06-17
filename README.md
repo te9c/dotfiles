@@ -8,7 +8,7 @@ Everything in one repository.
 
 > [!IMPORTANT]
 > Don't forget to pass `--recurse-submodules` to git clone command
-> to download configs that located in other repositories (like [neovim](https://github.com/te9c/AstroNvim-config)).
+> to download configs that located in other repositories (like [neovim](https://github.com/te9c/nvim-config)).
 
 # Configuration
 
