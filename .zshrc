@@ -131,6 +131,7 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
+export PATH="/Users/te9c/.cargo/bin:$PATH"
 
 alias anvim="NVIM_APPNAME=anvim /opt/homebrew/bin/nvim"
 alias nvim="nvim-nightly"
