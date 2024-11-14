@@ -85,7 +85,6 @@ alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - l : yabai -m window --focus east
 
-
 # changing spaces
 # alt - 0x17 : yabai -m space --focus 1
 # alt - 0x1C : yabai -m space --focus 2

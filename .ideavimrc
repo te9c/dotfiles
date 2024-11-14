@@ -11,8 +11,8 @@ inoremap jj <esc>
 inoremap jk <esc>
 nnoremap o o<esc>
 nnoremap O O<esc>
-nnoremap L :tabnext<CR>
-nnoremap H :tabprev<CR>
+nnoremap <C-)> :tabnext<CR>
+nnoremap <C-*> :tabprev<CR>
 nnoremap <leader>c :close<CR>
 
 nnoremap <C-h> <C-w>h
@@ -29,3 +29,5 @@ nmap <leader>lr <Action>(RenameElement)
 nmap gcc <Action>(CommentByLineComment)
 vmap gc <Action>(CommentByLineComment)
 nmap <leader>lf <Action>(ReformatCode)
+
+Plug 'tpope/vim-surround'
