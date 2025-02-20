@@ -7,8 +7,8 @@ vnoremap <leader>y "+y
 nnoremap <leader>p "+p
 vnoremap <leader>p "+p
 
-inoremap jj <esc>
-inoremap jk <esc>
+"inoremap jj <esc>
+"inoremap jk <esc>
 nnoremap o o<esc>
 nnoremap O O<esc>
 nnoremap <C-)> :tabnext<CR>

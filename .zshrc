@@ -134,7 +134,7 @@ export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
 export PATH="/Users/te9c/.cargo/bin:$PATH"
 
 alias anvim="NVIM_APPNAME=anvim /opt/homebrew/bin/nvim"
-alias nvim="nvim-nightly"
+# alias nvim="nvim-nightly"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-features=PlatformHEVCEncoderSupport"
 
 # fzf zsh integration
@@ -142,3 +142,10 @@ eval "$(fzf --zsh)"
 
 # FIX Alt-c in fzf
 bindkey "ç" fzf-cd-widget
+
+export CompetitiveDir="$HOME/Work/competitive-programming-notes"
+export CodeforcesDir="$CompetitiveDir/codeforces"
+
+alias compdir="cd $CompetitiveDir"
+alias cfdir="cd $CodeforcesDir"
+# export PATH="/opt/homebrew/opt/m4/bin:$PATH" # could cause trouble if macos's version of m4 is installed

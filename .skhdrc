@@ -133,7 +133,7 @@ ctrl + alt - k : yabai -m window --swap north
 ctrl + alt - l : yabai -m window --swap east
 
 # open terminal
-alt - return : kitty --single-instance ~
+# alt - return : kitty --single-instance ~
 alt - q : yabai -m window --close
 
 # send current space to display 2
