@@ -71,7 +71,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(zsh-syntax-highlighting zsh-autocomplete)
-plugins=(fast-syntax-highlighting zsh-autocomplete)
+# plugins=(fast-syntax-highlighting zsh-autocomplete)
+plugins=(fast-syntax-highlighting)
 
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
@@ -107,14 +108,15 @@ alias kssh="kitty +kitten ssh"
 export EDITOR="nvim"
 alias ranger='ranger --choosedir=/tmp/.rangerdir; LASTDIR=`cat /tmp/.rangerdir`; cd "$LASTDIR"'
 
-alias g++='g++-14'
-alias gcc='gcc-14'
+alias g++='g++-15'
+alias gcc='gcc-15'
 
 alias timus='clipcopy $HOME/Work/secrets/timus.txt'
 
 export PATH="$HOME/.local/bin:$PATH"
 export PAGER=less
 export MANPAGER='nvim +Man!'
+# MANPAGER=less
 
 # () {
 #    local -a prefix=( '\e'{\[,O} )
@@ -148,4 +150,8 @@ export CodeforcesDir="$CompetitiveDir/codeforces"
 
 alias compdir="cd $CompetitiveDir"
 alias cfdir="cd $CodeforcesDir"
+
+export GPG_TTY=$(tty)
 # export PATH="/opt/homebrew/opt/m4/bin:$PATH" # could cause trouble if macos's version of m4 is installed
+alias yboff="yabai --stop-service;skhd --stop-service"
+alias ybon="skhd --start-service;yabai --start-service"
