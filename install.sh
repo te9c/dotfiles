@@ -1,4 +1,5 @@
 # This is install script
+# Could be dangerous, I haven't tested it for a while.
 
 if ! command -v stow &> /dev/null
 then
@@ -17,6 +18,7 @@ INSTALL_KITTYCONFIG=true
 INSTALL_NVIMCONFIG=true
 INSTALL_PICOMCONFIG=false
 INSTALL_POLYBARCONFIG=false
+INSTALL_TMUXCONFIG=true
 
 # disable to not auto determine which options to install
 auto_options=true
@@ -120,6 +122,14 @@ fi
 printf ".config/polybar "
 if [[ $INSTALL_POLYBARCONFIG == false ]]; then
     IGNORE+=("(.config/polybar)")
+    printf "(✗)\n"
+else
+    printf "(✓)\n"
+fi
+
+printf ".tmux.conf "
+if [[ $INSTALL_TMUXCONFIG == false ]]; then
+    IGNORE+=("(.tmux.conf)")
     printf "(✗)\n"
 else
     printf "(✓)\n"
