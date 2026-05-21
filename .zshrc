@@ -155,3 +155,4 @@ export GPG_TTY=$(tty)
 # export PATH="/opt/homebrew/opt/m4/bin:$PATH" # could cause trouble if macos's version of m4 is installed
 alias yboff="yabai --stop-service;skhd --stop-service"
 alias ybon="skhd --start-service;yabai --start-service"
+export SSH_AUTH_SOCK="/Users/te9c/.bitwarden-ssh-agent.sock"
