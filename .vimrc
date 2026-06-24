@@ -1,5 +1,7 @@
 syntax on
 
+colorscheme desert
+
 let mapleader = "space"
 
 " basically just https://github.com/te9c/nvim-config/blob/main/lua/options.lua

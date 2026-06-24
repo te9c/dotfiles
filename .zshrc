@@ -115,8 +115,8 @@ alias timus='clipcopy $HOME/Work/secrets/timus.txt'
 
 export PATH="$HOME/.local/bin:$PATH"
 export PAGER=less
-export MANPAGER='nvim +Man!'
-# MANPAGER=less
+# export MANPAGER='nvim +Man!'
+MANPAGER=less
 
 # () {
 #    local -a prefix=( '\e'{\[,O} )
