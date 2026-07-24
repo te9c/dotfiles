@@ -1,12 +1,5 @@
-" Vim Keymap file for russian characters, layout 'dvorak', MS Windows variant
-" Derived from russian-jcuken.vim by Artem Chuprina <ran@ran.pp.ru>
-" Useful mainly with utf-8 but may work with other encodings
-
-" Maintainer:   Serhiy Boiko <cris.kiev@gmail.com>
-" Last Changed: 2007 Jun 29
-
-" All characters are given literally, conversion to another encoding (e.g.,
-" UTF-8) should work.
+" Vim russian keymap for programming dvorak.
+" Based on vim's russian-dvorak keymap
 scriptencoding utf-8
 
 let b:keymap_name = "ru"
