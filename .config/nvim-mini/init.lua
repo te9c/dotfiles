@@ -24,10 +24,8 @@ vim.opt.iminsert = 0
 local function toggle_keymap()
     if vim.opt.iminsert:get() == 1 then
         vim.opt.iminsert = 0
-        print('en')
     else
         vim.opt.iminsert = 1
-        print('ru')
     end
 
     if vim.api.nvim_get_mode().mode == 'i' then
@@ -35,3 +33,13 @@ local function toggle_keymap()
     end
 end
 vim.keymap.set({'n', 'i'}, '<C-l>', toggle_keymap, { desc = "toggle between russian and english keymaps" })
+
+function get_keymap_name()
+    if vim.opt.iminsert:get() == 1 then
+        return 'ru'
+    else
+        return 'en'
+    end
+end
+
+vim.opt.statusline = "%<%f %h%w%m%r %{% v:lua.require('vim._core.util').term_exitcode() %}%=%{% luaeval('(package.loaded[''vim.ui''] and vim.api.nvim_get_current_win() == tonumber(vim.g.actual_curwin or -1) and vim.ui.progress_status()) or '''' ')%}%{% &showcmdloc == 'statusline' ? '%-10.S ' : '' %}%{% '<'..v:lua.get_keymap_name()..'> ' %}%{% &busy > 0 ? '◐ ' : '' %}%{% luaeval('(package.loaded[''vim.diagnostic''] and next(vim.diagnostic.count()) and vim.diagnostic.status() .. '' '') or ''''') %}%{% &ruler ? ( &rulerformat == '' ? '%-14.(%l,%c%V%) %P' : &rulerformat ) : '' %}"
