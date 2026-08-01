@@ -18,7 +18,7 @@ vim.opt.showmode = false
 vim.keymap.set('n', 'o', 'o<esc>')
 vim.keymap.set('n', 'O', 'O<esc>')
 
-vim.opt.keymap = "russian-programmers-dvorak"
+vim.opt.keymap = "russian-programmers-dvorak-true-ru"
 vim.opt.iminsert = 0
 
 local function toggle_keymap()
