@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>org.sil.ukelele.keyboardlayout.true_ru_cmd_pdvorak</string>
+	<key>CFBundleName</key>
+	<string>true_ru_cmd_pdvorak</string>
+	<key>CFBundleVersion</key>
+	<string></string>
+	<key>KLInfo_Russian true – Dvorak shortcuts</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<true/>
+		<key>TISIconIsTemplate</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.true_ru_cmd_pdvorak.russiantrue–dvorakshortcuts</string>
+		<key>TISIntendedLanguage</key>
+		<string>ru-RU</string>
+	</dict>
+</dict>
+</plist>
