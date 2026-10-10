@@ -2,5 +2,5 @@ base/clang
 base/nvim-mini
 base/tmux
 base/vim
-base/zsh
+macos/zsh
 macos/kitty
