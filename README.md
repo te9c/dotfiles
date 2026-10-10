@@ -1,16 +1,17 @@
 This is all of my dotfiles.
 Everything in one repository.
 
-# How to setup?
+Requires `GNU stow` to install. Everything is separated into packages
+and profiles combines several packages into logical group.
 
-1. Install `GNU stow` on your system.
-2. Run `install.sh`
+# How to install?
 
-> [!IMPORTANT]
-> Don't forget to pass `--recurse-submodules` to git clone command
-> to download configs that located in other repositories (like [neovim](https://github.com/te9c/nvim-config)).
+1. Install `stow` on your machine. You can do it via `apt` or `brew`.
+2. Run `./install.sh <profile>` script with desired profile. You can pass
+`--include-packages` with string of additional packages to include. Also
+the script supports `--dry-run`.
 
-# Configuration
-
-The `install.sh` script automatically install required config based on your system.
-But if you want you can set `auto_options` variable to `false` and select manually which configs to install.
+Example:
+```bash
+./install.sh linux --include-packages="macos/kitty,linux/i3"
+```
