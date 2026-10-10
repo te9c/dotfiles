@@ -14,7 +14,7 @@ vim.opt.scrolloff = 2
 vim.opt.guicursor = 'n-c-v:block-nCursor'
 vim.opt.foldcolumn = "auto"
 vim.opt.showmode = false
-vim.opt.exrc
+vim.opt.exrc = true
 
 vim.keymap.set('n', 'o', 'o<esc>')
 vim.keymap.set('n', 'O', 'O<esc>')
