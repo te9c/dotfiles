@@ -33,7 +33,6 @@ class StowPackage:
         command.extend([
             f"--dir={package_dir.parent}",
             f"--target={target_dir}",
-            "--",
             package_dir.name,
         ])
         print(f"Stowing {self.path}", flush=True)
