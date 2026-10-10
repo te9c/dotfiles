@@ -14,6 +14,7 @@ vim.opt.scrolloff = 2
 vim.opt.guicursor = 'n-c-v:block-nCursor'
 vim.opt.foldcolumn = "auto"
 vim.opt.showmode = false
+vim.opt.exrc
 
 vim.keymap.set('n', 'o', 'o<esc>')
 vim.keymap.set('n', 'O', 'O<esc>')
@@ -28,11 +29,11 @@ local function toggle_keymap()
         vim.opt.iminsert = 1
     end
 
-    if vim.api.nvim_get_mode().mode == 'i' then
+    if vim.api.nvim_get_mode().mode == 'i' or vim.api.nvim_get_mode().mode == 'c' then
         vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-^>', true, false, true), 'n', false)
     end
 end
-vim.keymap.set({'n', 'i'}, '<C-l>', toggle_keymap, { desc = "toggle between russian and english keymaps" })
+vim.keymap.set({'n', 'i', 'c'}, '<C-l>', toggle_keymap, { desc = "toggle between russian and english keymaps" })
 
 function get_keymap_name()
     if vim.opt.iminsert:get() == 1 then
