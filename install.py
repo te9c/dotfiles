@@ -68,7 +68,7 @@ def get_args() -> argparse.Namespace:
     return args
 
 def get_packages_from_profile(profile: str) -> list[StowPackage]:
-    if not re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_.-]*", profile):
+    if not re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_./-]*", profile):
         raise ValueError(f"Invalid profile name: {profile}")
 
     packages = []
