@@ -11,7 +11,8 @@ class StowPackage:
         self.path = path
 
     def is_valid(self) -> tuple[bool, str]:
-        if not re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_.-]*(/[A-Za-z0-9_][A-Za-z0-9_.-]*)*", self.path):
+        STOW_PACKAGE_PATH_VALIDATION_REGEX = r"[A-Za-z0-9_][A-Za-z0-9_.-]*(/[A-Za-z0-9_][A-Za-z0-9_.-]*)*"
+        if not re.fullmatch(STOW_PACKAGE_PATH_VALIDATION_REGEX, self.path):
             return False, "invalid package path"
 
         package_dir = Path(__file__).resolve().parent / "packages" / self.path
@@ -68,7 +69,8 @@ def get_args() -> argparse.Namespace:
     return args
 
 def get_packages_from_profile(profile: str) -> list[StowPackage]:
-    if not re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_./-]*", profile):
+    PROFILE_NAME_VALIDATION_REGEX = r"[A-Za-z0-9_][A-Za-z0-9_./-]*"
+    if not re.fullmatch(PROFILE_NAME_VALIDATION_REGEX, profile):
         raise ValueError(f"Invalid profile name: {profile}")
 
     packages = []
